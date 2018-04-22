@@ -1,8 +1,6 @@
 # smooth-jekyll-theme
 
-A simple, flat, beautiful and highly customizable jekyll theme based on BootStrap 4.
-
-
+A fluent, beautiful, responsive and highly customizable jekyll theme based on BootStrap 4. [https://swgrhck.github.io/smooth-jekyll-theme](https://swgrhck.github.io/smooth-jekyll-theme)
 
 
 ## Installation
@@ -33,7 +31,7 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/swgrhck/smooth-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
