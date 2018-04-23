@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 #reference: https://github.com/pages-themes/cayman
 
 set -e
