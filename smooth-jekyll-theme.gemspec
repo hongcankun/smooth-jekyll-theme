@@ -17,5 +17,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency 'html-proofer', '~> 3.0'
-  spec.add_development_dependency 'w3c_validators', '~> 1.3'
 end
