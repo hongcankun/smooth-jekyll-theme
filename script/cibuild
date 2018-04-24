@@ -1,7 +1,0 @@
-#!/bin/sh
-
-set -e
-
-bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-html --check-sri --disable-external
-gem build smooth-jekyll-theme.gemspec

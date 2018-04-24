@@ -1,6 +1,7 @@
 language: ruby
 sudo: false
 rvm: 2.2
+
 branches:
   only:
   - master
@@ -9,7 +10,7 @@ cache:
   directories:
     - vendor/bundle
 
-before_script:
-  - chmod +x script/**
 script:
-  - script/cibuild
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --check-html --check-sri --disable-external
+  - gem build smooth-jekyll-theme.gemspec
