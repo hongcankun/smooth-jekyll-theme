@@ -2,11 +2,11 @@ language: ruby
 sudo: false
 rvm: 2.2
 cache: bundler
-
 branches:
   only:
   - master
-
+git:
+  depth: 3
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --check-html --check-sri --disable-external
