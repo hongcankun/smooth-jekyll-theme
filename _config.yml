@@ -1,0 +1,9 @@
+# jekyll configuration
+source: docs
+destination: docs/_site
+
+# theme configuration
+title: Smooth
+
+# if you want to show a brand icon in page header, you can uncomment brand_icon, and set the relative url of the icon
+# brand_icon: /path/to/brand/icon
