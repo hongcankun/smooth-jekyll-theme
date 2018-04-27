@@ -1,7 +1,0 @@
-destination: ./docs
-exclude:
-  - LICENSE
-  - README.md
-  - smooth-jekyll-theme.gemspec
-  - Gemfile
-  - Gemfile.lock

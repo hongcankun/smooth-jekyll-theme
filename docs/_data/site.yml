@@ -1,0 +1,4 @@
+# site configuration
+title: Smooth
+favicon: /assets/img/favicon-32x32.png # the relative url of the favicon
+brand_icon: /assets/img/brand-icon.svg # the relative url of the icon to be displayed in page header

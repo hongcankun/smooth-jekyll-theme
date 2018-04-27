@@ -8,6 +8,7 @@ branches:
 git:
   depth: 3
 script:
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./docs/_site --check-html --check-sri --disable-external
   - gem build smooth-jekyll-theme.gemspec
+  - cd ./docs/
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --check-html --check-sri --disable-external
