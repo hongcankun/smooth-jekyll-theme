@@ -29,3 +29,6 @@ Gemfile.lock
 *.sublime-workspace
 nbproject
 Thumbs.db
+
+# github pages
+docs
