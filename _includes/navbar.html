@@ -1,5 +1,5 @@
 <!-- Site navbar-->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-{{site.data.site.navbar_expand | default: 'lg'}} navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="{{'/' | relative_url}}">
       {% if site.data.site.brand_icon %}
