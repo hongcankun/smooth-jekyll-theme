@@ -1,1 +1,15 @@
 remote_theme: "swgrhck/smooth-jekyll-theme"
+
+permalink: pretty
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
