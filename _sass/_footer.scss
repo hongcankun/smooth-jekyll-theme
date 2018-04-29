@@ -1,0 +1,27 @@
+// Contents
+//
+// Footer
+// Footer copyright
+
+// Navbar
+//
+// Provide a concise footer with information such as copyright.
+
+.footer {
+  position: relative;
+
+  border: $footer-border-color solid 0;
+  border-top-width: $footer-border-top-width;
+  border-bottom-width: $footer-border-bottom-width;
+
+  margin-top: $footer-margin-top;
+  padding: $footer-padding-y $footer-padding-x;
+
+  text-align: $footer-text-align !important;
+  background-color: $footer-bg;
+}
+
+.footer-copyright {
+  font-size: $footer-copyright-font-size;
+  color: $footer-copyright-color;
+}

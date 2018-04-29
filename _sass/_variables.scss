@@ -1,0 +1,20 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Footer
+//
+$footer-border-top-width: $border-width !default;
+$footer-border-bottom-width: 0 !default;
+$footer-border-color: $border-color !default;
+
+$footer-margin-top: $spacer * 3 !default;
+$footer-padding-y: $spacer * 2 !default;
+$footer-padding-x: $spacer * 2 !default;
+
+$footer-text-align: center !default;
+$footer-bg: $white !default;
+
+$footer-copyright-color: $text-muted !default;
+$footer-copyright-font-size: $font-size-sm !default;
