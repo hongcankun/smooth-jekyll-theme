@@ -1,45 +1,36 @@
 <!-- Site navbar-->
 <nav class="navbar sticky-top navbar-expand-{{site.data.site.navbar_expand | default: 'lg'}} navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="{{'/' | relative_url}}">
+    <a class="navbar-brand font-weight-bold" href="{{'/' | relative_url}}">
       {% if site.data.site.brand_icon %}
       <img src="{{site.data.site.brand_icon | relative_url}}" class="d-inline-block align-top" width="30" height="30" alt="BrandIcon">
       {% endif %}
-      {{site.data.site.title}}
+      {{site.data.site.title | escape}}
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    {% if site.data.site.header_pages %}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#_navbarCollapsible"
+            aria-controls="_navbarCollapsible" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse" id="_navbarCollapsible">
+      <ul class="navbar-nav ml-auto">
+        {% for page_url in site.data.site.header_pages %}
+        {% assign header_page = site.pages | where: "url", page_url | first %}
+        {% if header_page.title %}
+        {% if page.url == header_page.url %}
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link font-weight-bold" href="#">{{header_page.title | excape}}<span class="sr-only">(current)</span></a>
         </li>
+        {% else %}
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link font-weight-bold" href="{{header_page.url | relative_url}}">{{header_page.title | escape}}</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
+    {% endif %}
   </div>
 </nav>
