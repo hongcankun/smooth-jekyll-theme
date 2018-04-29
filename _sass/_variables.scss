@@ -3,6 +3,13 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
+// Icon
+//
+$icon-margin: 0.25em !default;
+
+$icon-font-size: 0.5625em !default;
+$icon-opacity: .5 !default;
+
 // Footer
 //
 $footer-border-top-width: $border-width !default;

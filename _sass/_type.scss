@@ -1,0 +1,6 @@
+//
+// Link
+//
+a[href^="http"] {
+  @include icon-before('\e064');
+}

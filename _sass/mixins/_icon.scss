@@ -1,0 +1,25 @@
+@mixin icon-before($content, $margin-right: $icon-margin, $opacity: $icon-opacity, $font-size: $icon-font-size) {
+  &:before {
+    content: $content;
+
+    display: inline-block;
+    margin-right: $margin-right;
+
+    font-family: Icons;
+    font-size: $font-size;
+    opacity: $opacity;
+  }
+}
+
+@mixin icon-after($content, $margin-left: $icon-margin, $opacity: $icon-opacity, $font-size: $icon-font-size) {
+  &:after {
+    content: $content;
+
+    display: inline-block;
+    margin-left: $margin-left;
+
+    font-family: Icons;
+    font-size: $font-size;
+    opacity: $opacity;
+  }
+}
